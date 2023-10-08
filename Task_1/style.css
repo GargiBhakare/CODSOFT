@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding :0;
+}
+
+body{
+    background-color: rgb(201, 192, 192);
+}
+#navigationbar{
+    background-color: rgb(110, 101, 101);
+    width : 100vw;
+    height : 5vh;
+    color : rgb(218, 205, 205);
+}
+
+ul{
+    padding-top: 10px;
+    text-align: center;
+}
+
+li{
+    display : inline;
+    padding :20px; 
+    /* padding increases the spacing between elements */
+    font-size: 20px;
+}
+
+.img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+#data{
+    margin-left: 10px;
+}
+#butt , #butt1 , #butt2 , #butt3{
+    padding: 8px;
+    width: 250px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-image: linear-gradient(rgb(83, 54, 29),rgb(169, 169, 115)) ;
+    margin-left: 10px;
+}
+
+/* Style the container for the navbar and logo */
+#navbar-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo and navigation */
+    background-color: rgb(110, 101, 101);
+    /* Set your desired background color */
+    color: #fff; /* Set text color */
+    padding: 10px; /* Add padding for spacing */
+}
+
+#pack, #pack2{
+    margin-left: 10px;
+}
+
+/* Style the logo */
+#logo img {
+    width: 80px; /* Adjust the width as needed */
+    margin-right: 20px; /* Add spacing between the logo and navigation */
+}
+
+/* Style the navigation list */
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list li {
+    margin-right: 10px; /* Add spacing between navigation items */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+/* Add hover effect to navigation items */
+#list li:hover {
+    text-decoration: underline;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+}
+
+#rev{
+    margin-left: 10px;
+}
