@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="calci_styles.css">
+</head>
+<body>
+<div class="container">
+<input type="text" id="result" readonly>
+<br>
+<input type="button" value="1" onclick="Result(1)">
+<input type="button" value="2" onclick="Result(2)">
+<input type="button" value="3" onclick="Result(3)">
+<br>
+<input type="button" value="4" onclick="Result(4)">
+<input type="button" value="5" onclick="Result(5)">
+<input type="button" value="6" onclick="Result(6)">
+<br>
+<input type="button" value="7" onclick="Result(7)">
+<input type="button" value="8" onclick="Result(8)">
+
+<input type="button" value="9" onclick="Result(9)">
+<br>
+<input type="button" value="0" onclick="Result(0)">
+<input type="button" value="+" onclick="Result('+')">
+<input type="button" value="-" onclick="Result('-')">
+<br>
+<input type="button" value="*" onclick="Result('*')">
+<input type="button" value="/" onclick="Result('/')">
+<input type="button" value="=" onclick="calculate()">
+<br>
+<input type="button" value="Clear" onclick="clearResult()"
+
+id="tye">
+</div>
+<script>
+function Result(value) {
+document.getElementById('result').value += value;
+}
+function calculate() {
+var result = eval(document.getElementById('result').value);
+document.getElementById('result').value = result;
+}
+function clearResult() {
+document.getElementById('result').value = '';
+}
+</script>
+</body>
+</html>
